@@ -20,10 +20,14 @@ labelList = [
 
 
 pygame.init()
+pygame.display.set_caption("Color Classifier")
 screen = pygame.display.set_mode([400,400])
 r = random.randint(0,255)
 g = random.randint(0,255)
 b = random.randint(0,255)
+
+font = pygame.font.SysFont("monospace",32)
+
 
 tick = pygame.time.Clock()
 
@@ -39,6 +43,8 @@ while True:
         index = sess.run(result)
         #print(index)
         print(labelList[index[0]])
+        label = font.render(labelList[index[0]],1,(0,0,0))
+        screen.blit(label,(0,0))
 
     pygame.display.update()
     tick.tick(1)
