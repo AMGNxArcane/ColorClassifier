@@ -17,4 +17,4 @@ python testModel.py
 You should see a window flashing random colors with the predicted label in the top left.
 
 
-![Alt Text](https://giphy.com/gifs/5zqESP2gu6pEzrBrKL)
+![Alt Text](https://media.giphy.com/media/5zqESP2gu6pEzrBrKL/giphy.gif)
